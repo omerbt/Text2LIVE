@@ -1,0 +1,8 @@
+image_path: "./data/images/horse.jpg" # path to the input image
+
+screen_text: "golden horse" # texts, describing the edit layer
+comp_text: "golden horse" # texts, describing the full edited image
+src_text: "horse" # texts, describing the input image
+
+bootstrap_text: "horse" # text, describing the region of interest in the input image
+bootstrap_epoch: 1000 # number of epochs for bootstrapping (it is annealed during training)

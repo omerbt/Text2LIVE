@@ -1,0 +1,13 @@
+pillow
+torch~=1.10.0
+torchvision~=0.11.2
+tqdm
+numpy
+ftfy
+regex
+madgrad~=1.1
+scipy
+imageio
+imageio-ffmpeg
+pyyaml
+gdown

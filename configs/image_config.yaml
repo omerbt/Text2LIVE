@@ -1,0 +1,60 @@
+seed: -1
+use_wandb: False
+wandb_project: clip_video_editing
+wandb_entity: clip_video_edit
+device: cuda
+log_images_freq: 50
+# dataset configuration
+results_folder: "results"
+resize_input: 512
+d_divisible_crops: 1
+source_image_every: 75
+crops_min_cover: 0.85
+
+# input augmentations
+flip_p: 0.5
+jitter_p: 0.1
+scale_min: 0.8
+scale_max: 1.2
+
+# text configuration
+#bootstrap_text: horse  # this prompt is not composed with any augmentations at the moment
+bootstrap_scheduler: linear # linear | exponential | none
+text_criterion: spherical # spherical | cosine
+
+# loss configuration
+bootstrap_epoch: -1
+lambda_bootstrap: 10
+lambda_bootstrap_min: 0
+bootstrapping_min_cover: 1
+lambda_structure: 2
+lambda_screen: 1
+lambda_sparsity: 6  # lambda_sparsity * ( lambda_alpha_l0 * L0_loss + lambda_alpha_l1 * L1_loss )
+lambda_alpha_l0: 0.01
+lambda_alpha_l1: 0.01
+lambda_composition: 1
+use_negative_bootstrap: False
+
+# CLIP handling configuration
+n_aug: 16  # number of augmentations to be applied before CLIP
+clip_model_name: "ViT-B/32" # ViT-B/16 | ViT-B/32 | ViT-L/14
+relevancy_num_layers: 10
+
+# CLIP augmentations
+clip_affine_transform_fill: 1
+
+# training configuration
+n_epochs: 1000
+scheduler_policy: exponential # [exponential| linear | step | plateau | cosine | none]
+gamma: 0.99
+min_lr: 0.00001
+lr: 0.0025
+optimizer: madgrad  # [madgrad | adam | radam | rmsprop | sgd]
+
+# CNN backbone configuration
+skip_n33d: 128
+skip_n33u: 128
+skip_n11: 4
+num_scales: 7
+
+
