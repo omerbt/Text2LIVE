@@ -1,7 +1,7 @@
 seed: -1
 use_wandb: False
-wandb_project: clip_video_editing
-wandb_entity: clip_video_edit
+wandb_project: project_name  # enter your project name here
+wandb_entity: project_entity  # enter your entity here
 device: cuda
 log_images_freq: 50
 # dataset configuration

@@ -1,8 +1,8 @@
 seed: -1
 device: cuda
 use_wandb: False
-wandb_project: clip_video_editing
-wandb_entity: clip_video_edit
+wandb_project: project_name  # enter your project name here
+wandb_entity: project_entity  # enter your entity here
 results_folder: results  # if not use wandb, this is the folder where the results will be saved
 
 resx: 768
