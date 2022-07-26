@@ -1,0 +1,10 @@
+finetune_background: True
+finetune_foreground: False
+checkpoint_path: data/pretrained_nla_models/lucia/checkpoint # path to the checkpoint file
+maximum_number_of_frames: 70 # maximum number of frames to use in the video
+
+screen_text: ["winter scene", "snow everywhere", "beautiful snow"] # texts, describing the edit layer
+comp_text: ["winter in park", "snowy park", "beautiful snow at city park"] # texts, describing the full edited video
+src_text: ["park","city park"] # texts, describing the input video
+
+n_epochs: 3000 # number of epochs to train

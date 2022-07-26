@@ -1,0 +1,66 @@
+seed: -1
+device: cuda
+use_wandb: True
+wandb_project: clip_video_editing
+wandb_entity: clip_video_edit
+results_folder: results  # if not use wandb, this is the folder where the results will be saved
+
+resx: 768
+resy: 432
+example_config: "car-turn_winter.yaml"
+
+save_model_starting_epoch: 900
+multiply_foreground_alpha: True
+
+flip_p: 0.5  # probability of applying flip before cnn
+n_aug: 6  # set to -1 to disable augmentation before CLIP
+clip_affine_transform_fill: 0  # 0 for black, 1 for white
+clip_model_name: "ViT-B/32"  # ViT-B/16 | ViT-B/32 | ViT-L/14
+
+text_criterion: spherical  # spherical | cosine | scaled_cosine (*1.2)
+
+bootstrap_text: ""
+bootstrap_scheduler: none
+bootstrap_epoch: -1  # epoch to stop penalizing sparsity
+use_negative_bootstrap: False  # whether to use negative relevance
+lambda_bootstrap_min: 0
+bootstrap_negative_text: []  # negative alpha - will ignore this
+bootstrap_negative_map_threshold: 0.6  # penalizing only locations with high values in relevancy
+bootstrapping_min_cover: 1
+relevancy_num_layers: 10
+
+lambda_screen: 1
+lambda_sparsity: 0.1  # lambda_sparsity * ( lambda_alpha_l0 * L0_loss + lambda_alpha_l1 * L1_loss )
+lambda_alpha_l0: 0.005
+lambda_alpha_l1: 0.01
+lambda_structure: 3
+lambda_bootstrap: 10
+lambda_clip: 1  # lambda_clip * ( lambda_comp_clip * L_comp + lambda_layer_clip * L_layer )
+lambda_composition: 1
+
+n_epochs: 3000
+gamma: 0.999
+min_lr: 0.00001
+lr: 0.0025
+optimizer: madgrad  # [adam | radam | rmsprop | sgd]
+
+# the following is relevant only for dip_backbones backbone
+skip_n33d: 128
+skip_n33u: 128
+skip_n11: 4
+num_scales: 7
+
+log_images_freq: 500
+center_frame_distance: 2
+
+input_entire_atlas: True
+entire_atlas_every: 75
+return_atlas_alpha: False
+
+grid_atlas_resolution: 2000
+align_corners: False
+
+crops_min_cover: 0.95  # 0.95 for foreground, 0.8 for background
+
+masks_border_expansion: 30
+mask_alpha_threshold: 0.95

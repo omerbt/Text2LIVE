@@ -1,0 +1,11 @@
+finetune_background: False
+finetune_foreground: True
+checkpoint_path: data/pretrained_nla_models/car-turn/checkpoint # path to the checkpoint file
+maximum_number_of_frames: 70 # maximum number of frames to use in the video
+
+screen_text: ["rusty jeep"] # texts, describing the edit layer
+comp_text: ["rusty jeep"] # texts, describing the full edited video
+src_text: ["jeep"] # texts, describing the input video
+
+bootstrap_epoch: 3000 # number of epochs for bootstrapping
+bootstrap_text: "car" # text, describing the region of interest in the input video

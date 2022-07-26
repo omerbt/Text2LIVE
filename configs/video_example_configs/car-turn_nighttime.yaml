@@ -1,0 +1,10 @@
+finetune_background: True
+finetune_foreground: False
+checkpoint_path: data/pretrained_nla_models/car-turn/checkpoint # path to the checkpoint file
+maximum_number_of_frames: 70 # maximum number of frames to use in the video
+
+screen_text: ["nighttime","night"] # texts, describing the edit layer
+comp_text: ["countryside at nighttime","countryside at night"] # texts, describing the full edited video
+src_text: ["countryside","countryside with trees"] # texts, describing the input video
+
+n_epochs: 1500 # number of epochs to train

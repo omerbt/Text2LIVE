@@ -1,0 +1,9 @@
+finetune_background: False
+finetune_foreground: True
+checkpoint_path: data/pretrained_nla_models/blackswan/checkpoint # path to the checkpoint file
+maximum_number_of_frames: 50 # maximum number of frames to use in the video
+
+screen_text: ["swan rubik's cube", "swan rubik's cube"] # texts, describing the edit layer
+comp_text: ["swan rubik's cube", "swan rubik's cube"] # texts, describing the full edited video
+src_text: ["black swan", "swan"] # texts, describing the input video
+
