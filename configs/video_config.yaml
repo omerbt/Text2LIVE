@@ -1,6 +1,6 @@
 seed: -1
 device: cuda
-use_wandb: True
+use_wandb: False
 wandb_project: clip_video_editing
 wandb_entity: clip_video_edit
 results_folder: results  # if not use wandb, this is the folder where the results will be saved
