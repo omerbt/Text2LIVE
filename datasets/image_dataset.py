@@ -38,7 +38,7 @@ class SingleImageDataset(Dataset):
         self.src_img = Image.open(cfg["image_path"]).convert("RGB")
 
         if cfg["resize_input"] > 0:
-            self.A_img = transforms.Resize(cfg["resize_input"])(self.src_img)
+            self.src_img = transforms.Resize(cfg["resize_input"])(self.src_img)
 
         self.step = -1
 
