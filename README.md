@@ -71,10 +71,10 @@ For more see the [supplementary material](https://text2live.github.io/sm/index.h
 
 ## Citation
 ```
-@article{Text2LIVE2022,
-	  author    = {Omer Bar-Tal and Dolev Ofri-Amar and Rafail Fridman and Yoni Katen and Tali Dekel},
-  	  title     = {Text2LIVE: Text-Driven Layered Image and Video Editing},
-	  journal   = {arXiv preprint arXiv:2204.02491},
-	  year      = {2022},
-  }
+@article{bar2022text2live,
+         title     = {Text2LIVE: Text-Driven Layered Image and Video Editing},
+         author    = {Bar-Tal, Omer and Ofri-Amar, Dolev and Fridman, Rafail and Kasten, Yoni and Dekel, Tali},
+         journal   = {arXiv preprint arXiv:2204.02491},
+         year      = {2022}
+}
 ```
