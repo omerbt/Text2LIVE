@@ -6,8 +6,11 @@
 
 ![teaser](https://user-images.githubusercontent.com/22198039/179798581-ca6f6652-600a-400a-b21b-713fc5c15d56.png)
 
-**Text2LIVE** is a method for editing a real-world image/video, using a text input. It can be used for localized and global edits that change the texture of an existing object or augment the scene with semi-transparent effects (e.g. smoke, fire, snow).
-### Abstract
+**Text2LIVE** is a method for text-driven editing of real-world images and videos, as described in <a href="https://arxiv.org/abs/2204.02491" target="_blank">(link to paper)</a>.
+
+[//]: # (. It can be used for localized and global edits that change the texture of existing objects or augment the scene with semi-transparent effects &#40;e.g. smoke, fire, snow&#41;.)
+
+[//]: # (### Abstract)
 >We present a method for zero-shot, text-driven appearance manipulation in natural images and videos. Specifically, given an input image or video and a target text prompt, our goal is to edit the appearance of existing objects (e.g., object's texture) or augment the scene with new visual effects (e.g., smoke, fire) in a semantically meaningful manner. Our framework trains a generator using an internal dataset of training examples, extracted from a single input (image or video and target text prompt), while leveraging an external pre-trained CLIP model to establish our losses. Rather than directly generating the edited output, our key idea is to generate an edit layer (color+opacity) that is composited over the original input. This allows us to constrain the generation process and maintain high fidelity to the original input via novel text-driven losses that are applied directly to the edit layer. Our method neither relies on a pre-trained generator nor requires user-provided edit masks. Thus, it can perform localized, semantic edits on high-resolution natural images and videos across a variety of objects and scenes.
 
 
