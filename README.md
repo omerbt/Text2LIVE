@@ -3,6 +3,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-Text2LIVE-b31b1b.svg)](https://arxiv.org/abs/2204.02491)
 ![Pytorch](https://img.shields.io/badge/PyTorch->=1.10.0-Red?logo=pytorch)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/weizmannscience/text2live)
 
 ![teaser](https://user-images.githubusercontent.com/22198039/179798581-ca6f6652-600a-400a-b21b-713fc5c15d56.png)
 
