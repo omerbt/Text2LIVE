@@ -75,10 +75,12 @@ For more see the [supplementary material](https://text2live.github.io/sm/index.h
 
 ## Citation
 ```
-@article{bar2022text2live,
-         title     = {Text2LIVE: Text-Driven Layered Image and Video Editing},
-         author    = {Bar-Tal, Omer and Ofri-Amar, Dolev and Fridman, Rafail and Kasten, Yoni and Dekel, Tali},
-         journal   = {arXiv preprint arXiv:2204.02491},
-         year      = {2022}
+@inproceedings{bar2022text2live,
+  title={Text2live: Text-driven layered image and video editing},
+  author={Bar-Tal, Omer and Ofri-Amar, Dolev and Fridman, Rafail and Kasten, Yoni and Dekel, Tali},
+  booktitle={European Conference on Computer Vision},
+  pages={707--723},
+  year={2022},
+  organization={Springer}
 }
 ```
