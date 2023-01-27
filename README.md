@@ -20,7 +20,7 @@
 
 ```
 git clone https://github.com/omerbt/Text2LIVE.git
-conda create --name text2live python=3.9 
+conda create --name text2live python=3.9 pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 conda activate text2live 
 pip install -r requirements.txt
 ```
