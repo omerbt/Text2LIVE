@@ -1,6 +1,4 @@
 pillow
-torch~=1.10.0
-torchvision~=0.11.2
 tqdm
 numpy
 ftfy

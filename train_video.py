@@ -19,7 +19,7 @@ def train_model(config):
     # set seed
     seed = config["seed"]
     if seed == -1:
-        seed = np.random.randint(2 ** 32)
+        seed = np.random.randint(2 ** 32, dtype=np.int64)
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
